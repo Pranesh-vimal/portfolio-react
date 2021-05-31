@@ -11,7 +11,7 @@ function Home() {
                         target="_blank"
                         rel="noreferrer"
                     >
-                        <i class="fab fa-linkedin text-2xl"></i>
+                        <i className="fab fa-linkedin text-2xl"></i>
                     </a>
                 </div>
                 <div className="my-3">
@@ -20,7 +20,7 @@ function Home() {
                         target="_blank"
                         rel="noreferrer"
                     >
-                        <i class="fab fa-github text-2xl"></i>
+                        <i className="fab fa-github text-2xl"></i>
                     </a>
                 </div>
                 <div className="my-3">
@@ -29,7 +29,7 @@ function Home() {
                         target="_blank"
                         rel="noreferrer"
                     >
-                        <i class="fab fa-twitter-square text-2xl"></i>
+                        <i className="fab fa-twitter-square text-2xl"></i>
                     </a>
                 </div>
             </div>
