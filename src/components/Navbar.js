@@ -24,11 +24,11 @@ function Navbar({ theme, setTheme }) {
     return (
         <>
             {!displayMenu && (
-                <div className="fixed bottom-0 inset-x-0 md:relative flex flex-wrap justify-between h-12 py-3 md:py-4 container mx-auto px-5">
+                <div className="fixed bottom-0 inset-x-0 md:relative flex flex-wrap justify-between h-12 py-3 md:py-4 container mx-auto px-5 bg-white dark:bg-gray-900 bg-opacity-100 md:bg-opacity-0 md:bg-auto dark:md:bg-auto dark:md:bg-opacity-0">
                     <div>
                         <Link
                             to="/"
-                            className="font-bold md:mx-4 hover:text-green-300 cursor-pointer transition duration-300 dark:text-white dark:hover:text-green-300"
+                            className="font-bold md:mx-4 hover:text-green-300 cursor-pointer transition duration-500 dark:text-white dark:hover:text-green-300"
                         >
                             Pranesh Palanisamy
                         </Link>
@@ -36,31 +36,31 @@ function Navbar({ theme, setTheme }) {
                     <div className="flex">
                         <Link
                             to="/"
-                            className="font-bold mr-2 md:mx-4 hidden md:block hover:text-green-300 cursor-pointer transition duration-300 dark:text-white dark:hover:text-green-300"
+                            className="font-bold mr-2 md:mx-4 hidden md:block hover:text-green-300 cursor-pointer transition duration-500 dark:text-white dark:hover:text-green-300"
                         >
                             Home
                         </Link>
                         <Link
                             to="/about"
-                            className="font-bold mr-2 md:mx-4 hidden md:block hover:text-green-300 cursor-pointer transition duration-300 dark:text-white dark:hover:text-green-300"
+                            className="font-bold mr-2 md:mx-4 hidden md:block hover:text-green-300 cursor-pointer transition duration-500 dark:text-white dark:hover:text-green-300"
                         >
                             About
                         </Link>
                         <Link
                             to="/skills"
-                            className="font-bold mr-2 md:mx-4 hidden md:block hover:text-green-300 cursor-pointer transition duration-300 dark:text-white dark:hover:text-green-300"
+                            className="font-bold mr-2 md:mx-4 hidden md:block hover:text-green-300 cursor-pointer transition duration-500 dark:text-white dark:hover:text-green-300"
                         >
                             Skills
                         </Link>
                         <Link
                             to="/works"
-                            className="font-bold mr-2 md:mx-4 hidden md:block hover:text-green-300 cursor-pointer transition duration-300 dark:text-white dark:hover:text-green-300"
+                            className="font-bold mr-2 md:mx-4 hidden md:block hover:text-green-300 cursor-pointer transition duration-500 dark:text-white dark:hover:text-green-300"
                         >
                             Works
                         </Link>
                         {theme ? (
                             <h6
-                                className="font-bold mr-2 md:mx-4 hover:text-green-300 cursor-pointer transition duration-300 dark:text-white dark:hover:text-green-300"
+                                className="font-bold mr-2 md:mx-4 hover:text-green-300 cursor-pointer transition duration-500 dark:text-white dark:hover:text-green-300"
                                 onClick={() => setTheme(!theme)}
                             >
                                 <span className="material-icons-outlined">
@@ -69,7 +69,7 @@ function Navbar({ theme, setTheme }) {
                             </h6>
                         ) : (
                             <h6
-                                className="font-bold mr-2 md:mx-4 hover:text-green-300 cursor-pointer transition duration-300 dark:text-white dark:hover:text-green-300"
+                                className="font-bold mr-2 md:mx-4 hover:text-green-300 cursor-pointer transition duration-500 dark:text-white dark:hover:text-green-300"
                                 onClick={() => setTheme(!theme)}
                             >
                                 <span className="material-icons-outlined">
@@ -78,7 +78,7 @@ function Navbar({ theme, setTheme }) {
                             </h6>
                         )}
                         <h6
-                            className="font-bold ml-2 md:hidden hover:text-green-300 cursor-pointer transition duration-300 dark:text-white dark:hover:text-green-300"
+                            className="font-bold ml-2 md:hidden hover:text-green-300 cursor-pointer transition duration-500 dark:text-white dark:hover:text-green-300"
                             onClick={() => setDisplayMenu(true)}
                         >
                             <i className="material-icons-outlined">grid_view</i>
@@ -87,11 +87,11 @@ function Navbar({ theme, setTheme }) {
                 </div>
             )}
             {displayMenu && (
-                <div className="fixed bottom-0 inset-x-0 md:hidden py-1 mx-auto px-5 flex flex-col flex-wrap">
-                    <div className="grid grid-cols-2 gap-3 shadow-lg rounded-md py-2 my-4 bg-white dark:bg-gray-900 bg-opacity-100">
+                <div className="fixed bottom-0 inset-x-0 md:hidden py-1 mx-auto px-5 flex flex-col flex-wrap bg-white dark:bg-gray-900 bg-opacity-100">
+                    <div className="grid grid-cols-2 gap-3 shadow-lg rounded-md py-2 my-4">
                         <Link
                             to="/"
-                            className="p-3 flex flex-col text-center hover:text-green-300 cursor-pointer transition duration-300 dark:text-white dark:hover:text-green-300"
+                            className="p-3 flex flex-col text-center hover:text-green-300 cursor-pointer transition duration-500 dark:text-white dark:hover:text-green-300"
                         >
                             <div className="py-1">
                                 <i className="material-icons-outlined text-2xl">
@@ -102,7 +102,7 @@ function Navbar({ theme, setTheme }) {
                         </Link>
                         <Link
                             to="/about"
-                            className="p-3 flex flex-col text-center hover:text-green-300 cursor-pointer transition duration-300 dark:text-white dark:hover:text-green-300"
+                            className="p-3 flex flex-col text-center hover:text-green-300 cursor-pointer transition duration-500 dark:text-white dark:hover:text-green-300"
                         >
                             <div className="py-1">
                                 <i className="material-icons-outlined text-2xl">
@@ -113,7 +113,7 @@ function Navbar({ theme, setTheme }) {
                         </Link>
                         <Link
                             to="/skills"
-                            className="p-3 flex flex-col text-center hover:text-green-300 cursor-pointer transition duration-300 dark:text-white dark:hover:text-green-300"
+                            className="p-3 flex flex-col text-center hover:text-green-300 cursor-pointer transition duration-500 dark:text-white dark:hover:text-green-300"
                         >
                             <div className="py-1">
                                 <i className="material-icons-outlined text-2xl">
@@ -124,7 +124,7 @@ function Navbar({ theme, setTheme }) {
                         </Link>
                         <Link
                             to="/works"
-                            className="p-3 flex flex-col text-center hover:text-green-300 cursor-pointer transition duration-300 dark:text-white dark:hover:text-green-300"
+                            className="p-3 flex flex-col text-center hover:text-green-300 cursor-pointer transition duration-500 dark:text-white dark:hover:text-green-300"
                         >
                             <div className="py-1">
                                 <i className="material-icons-outlined text-2xl">
@@ -146,7 +146,7 @@ function Navbar({ theme, setTheme }) {
                         <div className="flex">
                             {theme ? (
                                 <h6
-                                    className="font-bold mr-2 md:mx-4 hover:text-green-300 cursor-pointer transition duration-300 dark:text-white dark:hover:text-green-300"
+                                    className="font-bold mr-2 md:mx-4 hover:text-green-300 cursor-pointer transition duration-500 dark:text-white dark:hover:text-green-300"
                                     onClick={() => setTheme(!theme)}
                                 >
                                     <span className="material-icons-outlined">
@@ -155,7 +155,7 @@ function Navbar({ theme, setTheme }) {
                                 </h6>
                             ) : (
                                 <h6
-                                    className="font-bold mr-2 md:mx-4 hover:text-green-300 cursor-pointer transition duration-300 dark:text-white dark:hover:text-green-300"
+                                    className="font-bold mr-2 md:mx-4 hover:text-green-300 cursor-pointer transition duration-500 dark:text-white dark:hover:text-green-300"
                                     onClick={() => setTheme(!theme)}
                                 >
                                     <span className="material-icons-outlined">
@@ -164,7 +164,7 @@ function Navbar({ theme, setTheme }) {
                                 </h6>
                             )}
                             <h6
-                                className="font-bold ml-2 md:hidden hover:text-green-300 cursor-pointer transition duration-300 dark:text-white dark:hover:text-green-300"
+                                className="font-bold ml-2 md:hidden hover:text-green-300 cursor-pointer transition duration-500 dark:text-white dark:hover:text-green-300"
                                 onClick={() => setDisplayMenu(false)}
                             >
                                 <i className="material-icons-outlined">close</i>
