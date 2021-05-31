@@ -13,7 +13,7 @@ function About() {
                 </p>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 md:gap-3 md:mt-6 container mx-auto md:px-10 text-center md:text-justify">
-                <div className="p-2">
+                <div className="px-5 py-2 md:p-2">
                     <img src={image} alt="Pranesh" className="rounded-lg border border-green-300 dark:border-white" />
                 </div>
                 <div className="p-2">
