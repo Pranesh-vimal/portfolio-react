@@ -13,7 +13,7 @@ function About() {
                 </p>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 md:gap-3 md:mt-6 container mx-auto md:px-10 text-center md:text-justify">
-                <div className="hidden md:block p-2">
+                <div className="p-2">
                     <img src={image} alt="Pranesh" className="rounded-lg border border-green-300 dark:border-white" />
                 </div>
                 <div className="p-2">
@@ -55,7 +55,7 @@ function About() {
                                 className="py-2 px-3 rounded-md shadow-sm bg-green-400 cursor-pointer text-white"
                             >
                                 Download Resume
-                                <i class="fas fa-cloud-download-alt mx-2"></i>
+                                <i className="fas fa-cloud-download-alt mx-2"></i>
                             </a>
                         </div>
                     </div>
