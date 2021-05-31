@@ -3,7 +3,7 @@ import Image from "../assets/img/pranesh.png";
 
 function Home() {
     return (
-        <div className="grid grid-cols-5 container mx-auto px-5">
+        <div className="grid grid-cols-5 container mx-auto px-5" data-aos="fade-up">
             <div className="flex flex-col md:mx-4 col-span-1 justify-center text-center text-green-400 h-screen">
                 <div className="my-3">
                     <a
