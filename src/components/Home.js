@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "../assets/img/pranesh.png";
+import Typewriter from "typewriter-effect";
 
 function Home() {
     return (
@@ -42,9 +43,21 @@ function Home() {
                         <h1 className="font-extrabold py-2 md:text-4xl dark:text-white">
                             Hi, I'am Pranesh
                         </h1>
-                        <p className="font-semibold py-2 text-green-400 dark:text-green-400">
-                            Full stack developer
-                        </p>
+                        <span className="font-semibold py-2 text-green-400 dark:text-green-400">
+                            <Typewriter
+                                options={{
+                                    loop: true,
+                                }}
+                                onInit={(typewriter) => {
+                                    typewriter
+                                        .typeString("Full stack developer")
+                                        .deleteAll()
+                                        .typeString("Freelancer")
+                                        .deleteAll()
+                                        .start();
+                                }}
+                            />
+                        </span>
                         <p className="py-2 text-green-400 dark:text-green-400">
                             High level experience in web development and
                             producting quality of work
@@ -80,13 +93,25 @@ function Home() {
                 </div>
                 <div className="-mt-10 text-center md:hidden">
                     <div className="p-3">
-                        <h1 className="font-extrabold md:py-2 md:text-4xl dark:text-white">
+                        <h1 className="font-extrabold py-1 md:py-2 md:text-4xl dark:text-white">
                             Hi, I'am Pranesh
                         </h1>
-                        <p className="font-semibold md:py-2 text-green-400 dark:text-green-400">
-                            Full stack developer
-                        </p>
-                        <p className="md:py-2 text-green-400 dark:text-green-400">
+                        <span className="font-semibold py-1 md:py-2 text-green-400 dark:text-green-400">
+                            <Typewriter
+                                options={{
+                                    loop: true,
+                                }}
+                                onInit={(typewriter) => {
+                                    typewriter
+                                        .typeString("Full stack developer")
+                                        .deleteAll()
+                                        .typeString("Freelancer")
+                                        .deleteAll()
+                                        .start();
+                                }}
+                            />
+                        </span>
+                        <p className="py-1 md:py-2 text-green-400 dark:text-green-400">
                             High level experience in web development and
                             producing quality of work
                         </p>
