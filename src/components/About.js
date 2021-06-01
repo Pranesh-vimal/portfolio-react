@@ -3,7 +3,7 @@ import image from "../assets/img/pranesh-1.jpg";
 
 function About() {
     return (
-        <div className="container mx-auto md:px-5 my-10 md:my-5" data-aos="fade-up">
+        <div className="container mx-auto md:px-5 my-12 md:my-5" data-aos="fade-up">
             <div className="text-center">
                 <h1 className="font-extrabold py-2 text-2xl md:text-4xl dark:text-white">
                     About Me
@@ -36,7 +36,7 @@ function About() {
                                 1
                             </h1>
                             <p className="text-xs font-bold">
-                                Year Experience
+                                Year experience
                             </p>
                         </div>
                         <div className="p-2 flex flex-col">
