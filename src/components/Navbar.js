@@ -87,7 +87,7 @@ function Navbar({ theme, setTheme }) {
                 </div>
             )}
             {displayMenu && (
-                <div className="fixed bottom-0 z-10 inset-x-0 md:hidden py-1 mx-auto px-5 flex flex-col flex-wrap bg-white dark:bg-gray-900 bg-opacity-100">
+                <div className="fixed bottom-0 z-10 inset-x-0 md:hidden py-1 container mx-auto px-5 flex flex-col flex-wrap bg-white dark:bg-gray-900 bg-opacity-100">
                     <div className="grid grid-cols-2 gap-3 shadow-lg rounded-md py-2 my-4">
                         <Link
                             to="/"
