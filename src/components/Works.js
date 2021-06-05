@@ -4,6 +4,7 @@ import SwiperCore, { Pagination, Navigation } from "swiper";
 import "swiper/swiper-bundle.min.css";
 import "swiper/components/pagination/pagination.min.css";
 import coronatracker from "../assets/img/corona-tracker.png";
+import seriesFinder from "../assets/img/react-series-finder.png";
 import pokemonApp from "../assets/img/pokemon.png";
 import spot from "../assets/img/spot.png";
 import royalcakes from "../assets/img/royal-cakes.png";
@@ -51,7 +52,6 @@ function Works() {
                         onSlideChange={(swiper) => {
                             setNext(!swiper.isEnd);
                             setPrev(!swiper.isBeginning);
-                            console.log(swiper);
                         }}
                         navigation={{
                             // Both prevEl & nextEl are null at render so this does not work
@@ -107,6 +107,49 @@ function Works() {
                                         </a>
                                         <a
                                             href="https://github.com/Pranesh-vimal/corona-tracker/"
+                                            target="_blank"
+                                            rel="noreferrer"
+                                            className="px-3 py-2 text-white bg-green-300 rounded-lg hover:bg-green-400 w-full text-center mx-3"
+                                        >
+                                            <i className="fab fa-github"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </SwiperSlide>
+                        <SwiperSlide>
+                            <div className="grid grid-cols-1 md:grid-cols-2 gap-1 md:gap-3">
+                                <div className="p-2">
+                                    <img
+                                        src={seriesFinder}
+                                        className="rounded-lg h-32 md:h-64 w-full"
+                                        alt="series finder"
+                                    />
+                                </div>
+                                <div className="p-2">
+                                    <h1 className="font-bold my-2 dark:text-white md:text-xl text-center">
+                                        Series Finder
+                                    </h1>
+                                    <p className="text-green-400">
+                                        A website to display the series details.
+                                        It is developed using
+                                        <span className="font-bold">
+                                            {" "}
+                                            Reactjs
+                                        </span>
+                                        .
+                                    </p>
+                                    <div className="flex justify-center my-3">
+                                        <a
+                                            href="https://pranesh-series-finder.netlify.app/"
+                                            target="_blank"
+                                            rel="noreferrer"
+                                            className="px-3 py-2 text-white bg-green-300 rounded-lg hover:bg-green-400 w-full text-center mx-3"
+                                        >
+                                            <i className="fas fa-link"></i>
+                                        </a>
+                                        <a
+                                            href="https://github.com/Pranesh-vimal/react-series-finder/"
                                             target="_blank"
                                             rel="noreferrer"
                                             className="px-3 py-2 text-white bg-green-300 rounded-lg hover:bg-green-400 w-full text-center mx-3"
