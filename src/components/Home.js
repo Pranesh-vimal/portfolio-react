@@ -1,6 +1,7 @@
 import React from "react";
 import Image from "../assets/img/pranesh.png";
 import Typewriter from "typewriter-effect";
+import SocialLinks from "./SocialLinks";
 
 function Home() {
     return (
@@ -9,33 +10,7 @@ function Home() {
             data-aos="fade-up"
         >
             <div className="flex flex-col md:mx-4 col-span-1 justify-center text-center text-green-400 h-screen">
-                <div className="my-3">
-                    <a
-                        href="https://www.linkedin.com/in/pranesh-vimal/"
-                        target="_blank"
-                        rel="noreferrer"
-                    >
-                        <i className="fab fa-linkedin text-2xl"></i>
-                    </a>
-                </div>
-                <div className="my-3">
-                    <a
-                        href="https://github.com/Pranesh-vimal/"
-                        target="_blank"
-                        rel="noreferrer"
-                    >
-                        <i className="fab fa-github text-2xl"></i>
-                    </a>
-                </div>
-                <div className="my-3">
-                    <a
-                        href="https://twitter.com/Pranesh_Vimal/"
-                        target="_blank"
-                        rel="noreferrer"
-                    >
-                        <i className="fab fa-twitter-square text-2xl"></i>
-                    </a>
-                </div>
+                <SocialLinks />
             </div>
             <div className="md:mx-4 my-5 md:my-10 col-span-4 grid grid-cols-1 md:grid-cols-2">
                 <div className="mt-5 hidden md:block">
