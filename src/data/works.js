@@ -1,6 +1,6 @@
 import coronatracker from "../assets/img/corona-tracker.png";
 import seriesFinder from "../assets/img/react-series-finder.png";
-import superherosFinder from "../assets/img/superheros-finder.png";
+import superherosFinder from "../assets/img/superheroes-finder.png";
 import passgen from "../assets/img/passgen-react.png";
 import pokemonApp from "../assets/img/pokemon.png";
 import spot from "../assets/img/spot.png";
