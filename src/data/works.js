@@ -1,5 +1,6 @@
 import coronatracker from "../assets/img/corona-tracker.png";
 import seriesFinder from "../assets/img/react-series-finder.png";
+import superherosFinder from "../assets/img/superheros-finder.png";
 import passgen from "../assets/img/passgen-react.png";
 import pokemonApp from "../assets/img/pokemon.png";
 import spot from "../assets/img/spot.png";
@@ -23,6 +24,13 @@ function works() {
             image: seriesFinder,
             website: "https://pranesh-series-finder.netlify.app/",
             github: "https://github.com/Pranesh-vimal/react-series-finder/",
+        },
+        {
+            name: "SuperHeros and Villians Finder",
+            desc: "A website to display all SuperHeroes and Villians from all universes. It is developed using <b> Reactjs</b>.",
+            image: superherosFinder,
+            website: "https://pranesh-comic-characters.netlify.app/",
+            github: "https://github.com/Pranesh-vimal/react-superheros-finder/",
         },
         {
             name: "Password Generator",
